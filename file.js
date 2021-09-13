@@ -37,14 +37,18 @@ let addTask=()=>{
     }
     else{
 
-    tasksBox.innerHTML+=`<div style="padding:30px; text-transform:capitalize ;"class="alert alert-info">
+    tasksBox.innerHTML+=`<div style="padding:30px; text-transform:capitalize ;"class="tasks alert alert-info">
     ${data}
     <button class="beleteBtn btn btn-danger float-right">Delete</button>
     <div>`
     addInput.value=""
     noData.classList.add('none')
     alert1.classList.add('none')
-    
+    tasksBox.addEventListener('click',function (e) {
+        if(e.target.classList.contains('tasks')){
+            e.target.classList.toggle('chicked')
+        }
+    })
     }
     
     
