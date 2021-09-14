@@ -15,11 +15,13 @@ let dark=()=>{
         darkMood.classList.remove('btn-light')
         darkMood.classList.add('btn-dark')
         document.body.classList.add('light')
+        darkMood.innerText="dark mood"
     }
     else{
         darkMood.classList.add('btn-light')
         darkMood.classList.remove('btn-dark')
         document.body.classList.remove('light')
+        darkMood.innerText="light mood"
     }
 
 }

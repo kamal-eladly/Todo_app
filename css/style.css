@@ -65,6 +65,7 @@ text-transform: capitalize;
     display: block;
     margin: auto;
     margin-top: 15px;
+    font-weight: bold
 }
 
 .light{
