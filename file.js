@@ -8,6 +8,26 @@ let model=document.getElementById('model')
 let add=document.getElementById('add')
 let alert1=document.getElementById('alert1')
 let alertClose=document.getElementById('alertClose')
+let darkMood =document.getElementById('darkMood')
+
+let dark=()=>{
+    if(darkMood.classList.contains('btn-light')){
+        darkMood.classList.remove('btn-light')
+        darkMood.classList.add('btn-dark')
+        document.body.classList.add('light')
+    }
+    else{
+        darkMood.classList.add('btn-light')
+        darkMood.classList.remove('btn-dark')
+        document.body.classList.remove('light')
+    }
+
+}
+darkMood.addEventListener('click',dark)
+
+
+
+
 
 
 let showmodel=()=>{

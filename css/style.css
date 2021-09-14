@@ -58,3 +58,18 @@ text-transform: capitalize;
     background-color: gray;
     text-decoration: line-through;
 }
+#darkMood{
+    padding: 10px 30px;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.light{
+    background-color:white;
+}
+
+
+
